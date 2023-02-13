@@ -43,14 +43,15 @@ export class Voiture {
 
     removePassager(index: number) {
 
-        index = parseInt(index.toString());
+        //index 
+        let parsed_index = parseInt(index.toString());
 
-        if (index >= 0 && index < this.passagers.length) { //On vérifie que l'index est correct
+        if (index == parsed_index && index >= 0 && index < this.passagers.length) { //On vérifie que l'index est correct
             this.passagers.splice(index, 1);
-            //à tester
         }
         else {
             console.log("L'index " + index + " est incorrect.");
+            return
         }
     }
 }
