@@ -11,10 +11,11 @@ export class VoitureService {
   liste_voitures: Array<Voiture> = [];
 
   //Création des voitures
-  mini: Voiture = new Voiture(0, "Mercedes", "", "noire", ["Rova", "Samy", "Julie"], 0);
+  voiture1: Voiture = new Voiture(0, "Mercedes", "", "noire", ["Rova", "Samy", "Julie"], 0);
+  voiture2: Voiture = new Voiture(1, "Ford", "", "rouge", ["Rova", "Samy", "Julie"], 0);
 
   constructor() {
-    this.liste_voitures.push(this.mini);
+    this.liste_voitures.push(this.voiture1);
   }
 
   listVoitures() {
